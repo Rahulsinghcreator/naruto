@@ -39,7 +39,7 @@ async def restart_handler(_, m):
     os.execl(sys.executable, sys.executable, *sys.argv)
 
 
-@bot.on_message(filters.command(["pip"]))
+@bot.on_message(filters.command(["naruto"]))
 async def account_login(bot: Client, m: Message):
     editable = await m.reply_text(f"**Now Send Me Your **txt** File & Follow Bot Instructions**")
     input: Message = await bot.listen(editable.chat.id)
